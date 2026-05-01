@@ -20,7 +20,7 @@ class RateLimitedLLM(LLM):
 llm = RateLimitedLLM(
     model="groq/llama-3.1-8b-instant",
     temperature=0.5,
-    max_completion_tokens=1024,
+    max_completion_tokens=250,
     top_p=0.9,
     stop=None,
     stream=False
