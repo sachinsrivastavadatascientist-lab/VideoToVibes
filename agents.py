@@ -17,6 +17,7 @@ llm = LLM(
     top_p=0.9,
     stop=None,
     stream=False,
+    max_rpm=2
 )
 ## Create a senior blog content researcher
 

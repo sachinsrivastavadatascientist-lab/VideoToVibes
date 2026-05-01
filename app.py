@@ -3,6 +3,7 @@ from agents import blog_researcher, blog_writer
 from tasks import research_task, write_task
 import streamlit as st
 import base64
+import time
 
 crew = Crew(
     agents=[blog_researcher, blog_writer],
@@ -43,6 +44,7 @@ if st.button("Generate Blog"):
         with st.spinner("AI is analyzing video..."):
 
             try:
+                time.sleep(10)
                 result = crew.kickoff(
                     inputs={"YT_URL": video_url}
                 )

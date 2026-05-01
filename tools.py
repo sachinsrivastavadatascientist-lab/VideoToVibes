@@ -30,7 +30,7 @@ def yt_tool(YT_URL: str) -> str:
     try:
         transcript_obj = YouTubeTranscriptApi()
         transcript = transcript_obj.fetch(video_id)
-        transcript =transcript[:10]
+        transcript =transcript[:20]
 
         return " ".join([t.text for t in transcript])
 
