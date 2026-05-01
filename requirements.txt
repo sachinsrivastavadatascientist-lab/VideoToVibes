@@ -1,7 +1,6 @@
 setuptools>=70.0.0
 streamlit>=1.32.0
 crewai>=0.80.0
-crewai-tools>=1.0.0
 langchain-groq==0.1.9
 python-dotenv==1.0.1
 youtube-transcript-api==0.6.2
