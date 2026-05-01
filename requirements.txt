@@ -1,7 +1,14 @@
 streamlit
 crewai==0.28.8
 chromadb==0.4.24
+instructor==1.15.1
+
 pydantic==1.10.13
+rich>=13.7.0,<15.0.0
+
+markdown-it-py
+mdurl
+pygments
 crewai_tools
 langchain_groq
 dotenv
