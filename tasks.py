@@ -5,13 +5,14 @@ from tools import yt_tool
 ## Research Task
 research_task = Task(
     description=(
-        'Analyze the YouTube video from this URL {YT_URL} '
-        'Extract key insights, important points, and structured understanding from the tools'
+        "Summarize the YouTube transcript into ONLY 4 bullet points. "
+        "Max 40 words total. No extra explanation."
         
     ),
-    expected_output='A comprehensive 5 bullet points only, max 100 words report with key insights based on the transcript of youtube video url {YT_URL} from the video transcript',
+    expected_output='4 short bullet points only.',
     agent=blog_researcher,
-    tools = [yt_tool]
+    tools = [yt_tool],
+    max_tokens=120
 )
 
 
@@ -31,6 +32,6 @@ write_task = Task(
     agent=blog_writer,
     async_execution=False,  # sequential execution
     output_file='new-blog-post.md',  # blog file save hoga
-    #tools = [yt_tool],
+    max_tokens=150,
     context=[research_task]   # VERY IMPORTANT (agent 1 → agent 2 flow)
 )
