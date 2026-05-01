@@ -33,7 +33,7 @@ def yt_tool(YT_URL: str) -> str:
         transcript =transcript[:20]
 
         text= " ".join([t.text for t in transcript])
-        return  text[:800]
+        return  text[:500]
 
     except Exception as e:
         return f"Error fetching transcript: {str(e)}"
