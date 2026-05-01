@@ -16,8 +16,7 @@ llm = LLM(
     max_completion_tokens=1024,
     top_p=0.9,
     stop=None,
-    stream=False,
-    max_rpm=2
+    stream=False
 )
 ## Create a senior blog content researcher
 
