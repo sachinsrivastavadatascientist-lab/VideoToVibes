@@ -1,0 +1,9 @@
+crewai
+crewai_tools
+langchain_groq
+dotenv
+python-dotenv
+youtube-transcript-api
+litellm
+# crewai groq
+streamlit
