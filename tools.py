@@ -32,7 +32,8 @@ def yt_tool(YT_URL: str) -> str:
         transcript = transcript_obj.fetch(video_id)
         transcript =transcript[:20]
 
-        return " ".join([t.text for t in transcript])
+        text= " ".join([t.text for t in transcript])
+        return  text[:800]
 
     except Exception as e:
         return f"Error fetching transcript: {str(e)}"
