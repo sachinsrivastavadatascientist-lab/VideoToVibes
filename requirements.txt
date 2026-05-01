@@ -1,4 +1,7 @@
-crewai
+streamlit
+crewai==0.28.8
+chromadb==0.4.24
+pydantic==1.10.13
 crewai_tools
 langchain_groq
 dotenv
