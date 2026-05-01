@@ -9,7 +9,7 @@ crew = Crew(
     agents=[blog_researcher, blog_writer],
     tasks=[research_task, write_task],
     process=Process.sequential,
-    cache=True,
+    cache=False,
     verbose=True   # ✅ helpful for debugging
 )
 

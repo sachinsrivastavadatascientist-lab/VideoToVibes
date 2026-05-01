@@ -5,14 +5,14 @@ from tools import yt_tool
 ## Research Task
 research_task = Task(
     description=(
-        "Summarize the YouTube video url {YT_URL} transcript  into ONLY 4 bullet points. "
-        "Max 40 words total. No extra explanation."
+        "Summarize the YouTube video {YT_URL} transcript into 5 bullet points "
+        "with specific details. Max 120 words total."
         
     ),
-    expected_output='4 short bullet points only.',
+    expected_output='Give 5 bullet points WITH specific details from the video transcript.',
     agent=blog_researcher,
     tools = [yt_tool],
-    max_tokens=120
+    max_tokens=200
 )
 
 
