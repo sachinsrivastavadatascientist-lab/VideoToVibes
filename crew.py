@@ -17,7 +17,7 @@ crew = Crew(
 #result = crew.kickoff(
     #inputs={
         
-        #"YT_URL": "https://www.youtube.com/watch?v=X7Zd4VyUgL0&t=1s"
+        #"YT_URL": ""
     #}
 #)
 

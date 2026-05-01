@@ -8,9 +8,7 @@ crew = Crew(
     agents=[blog_researcher, blog_writer],
     tasks=[research_task, write_task],
     process=Process.sequential,
-    memory=True,
     cache=True,
-    max_rpm=100,
     verbose=True   # ✅ helpful for debugging
 )
 
