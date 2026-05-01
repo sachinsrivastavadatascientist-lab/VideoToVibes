@@ -5,5 +5,5 @@ dotenv
 python-dotenv
 youtube-transcript-api
 litellm
-# crewai groq
+groq
 streamlit
