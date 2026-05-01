@@ -5,12 +5,19 @@ from dotenv import load_dotenv
 from tools import yt_tool
 load_dotenv()
 import streamlit as st
+import time
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY") or st.secrets.get("GROQ_API_KEY")
 
 os.environ['GROQ_API_KEY'] = os.getenv('GROQ_API_KEY')
 print(os.getenv('GROQ_API_KEY'))
-llm = LLM(
+
+class RateLimitedLLM(LLM):
+    def call(self, *args, **kwargs):
+        time.sleep(5)   # 🔥 har API call ke beech delay
+        return super().call(*args, **kwargs)
+
+llm = RateLimitedLLM(
     model="groq/llama-3.1-8b-instant",
     temperature=0.5,
     max_completion_tokens=1024,

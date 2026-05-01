@@ -44,7 +44,7 @@ if st.button("Generate Blog"):
         with st.spinner("AI is analyzing video..."):
 
             try:
-                time.sleep(10)
+                time.sleep(5)
                 result = crew.kickoff(
                     inputs={"YT_URL": video_url}
                 )
