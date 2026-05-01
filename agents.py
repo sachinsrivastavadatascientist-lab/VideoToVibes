@@ -29,7 +29,7 @@ llm = RateLimitedLLM(
 
 blog_researcher = Agent(
     role='Blog Researcher from Youtube Videos',
-    goal='Analyze the provided transcript provided by tools and extract relevant insights from the url {YT_URL}',
+    goal='Analyze the provided transcript of yt video whose url is {YT_URL} and is provided by tools and extract relevant insights',
     verbose=True,
     backstory=(
         'Expert in understanding YouTube video transcripts in AI, Data Science, Machine Learning and GenAI, and providing structured insights'

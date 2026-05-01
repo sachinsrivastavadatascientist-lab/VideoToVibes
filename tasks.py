@@ -5,7 +5,7 @@ from tools import yt_tool
 ## Research Task
 research_task = Task(
     description=(
-        "Summarize the YouTube transcript into ONLY 4 bullet points. "
+        "Summarize the YouTube video url {YT_URL} transcript  into ONLY 4 bullet points. "
         "Max 40 words total. No extra explanation."
         
     ),
